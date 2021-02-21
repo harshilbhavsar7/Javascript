@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>Replace "Bhavsar" with "Harshil" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Bhavsar </p>   
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace("Bhavsar","Harshil");
+//   for case insensitive
+// var txt = str.replace(/bhavsar/i,"Harshil");
+// i=	Perform case-insensitive matching
+// g=	Perform a global match (find all matches rather than stopping after the first match)
+// Perform multiline matching
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
